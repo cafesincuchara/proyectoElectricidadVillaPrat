@@ -1,73 +1,66 @@
-# Welcome to your Lovable project
+# Electroservicios Villa Prat
 
-## Project info
+Proyecto web para mostrar servicios eléctricos y permitir el contacto vía formulario y WhatsApp.
 
-**URL**: https://lovable.dev/projects/be924646-d72c-4019-b253-ba4aa9a341a8
+## Tecnologías principales
+- **Frontend:** React + Vite + TypeScript + TailwindCSS
+- **Componentes UI:** shadcn/ui, Radix UI
+- **Backend:** Node.js + Express (API para contacto)
+- **Email:** Nodemailer (envío de mensajes del formulario a Gmail)
 
-## How can I edit this code?
+## Estructura del proyecto
+- `src/` — Código fuente del frontend (componentes, páginas, hooks)
+- `server.js` — Servidor Express para manejar el formulario de contacto
+- `api/contact.ts` — (versión handler para backend, no usada en Express)
+- `.env` — Variables de entorno (NO subir a git)
 
-There are several ways of editing your application.
+## Instalación y uso
 
-**Use Lovable**
+1. **Clona el repositorio y entra en la carpeta:**
+   ```bash
+   git clone <url-del-repo>
+   cd electroservicios-villa-prat-main
+   ```
+2. **Instala dependencias:**
+   ```bash
+   npm install
+   ```
+3. **Configura las variables de entorno:**
+   Crea un archivo `.env` en la raíz con:
+   ```env
+   GMAIL_USER=tu_email@gmail.com
+   GMAIL_APP_PASSWORD=tu_app_password
+   ```
+4. **Levanta el backend:**
+   ```bash
+   node server.js
+   ```
+   (Asegúrate de tener Node.js v18+ y el puerto 5000 libre)
+5. **Levanta el frontend:**
+   ```bash
+   npm run dev
+   ```
+   Accede a `http://localhost:5173` (o el puerto que indique Vite)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/be924646-d72c-4019-b253-ba4aa9a341a8) and start prompting.
+## Uso del formulario de contacto
+- El formulario envía los datos a `http://localhost:5000/api/contact`.
+- El backend reenvía el mensaje al correo configurado en `.env`.
+- El botón de WhatsApp abre un chat con mensaje predefinido.
 
-Changes made via Lovable will be committed automatically to this repo.
+## Scripts útiles
+- `npm run dev` — Inicia el frontend
+- `node server.js` — Inicia el backend
+- `npm run build` — Compila el frontend para producción
+- `npm run lint` — Linting del código
 
-**Use your preferred IDE**
+## Notas de seguridad
+- **No subas tu archivo `.env` ni credenciales al repositorio.**
+- Cambia las credenciales de Gmail por seguridad si las compartiste.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Despliegue
+- Para producción, usa servicios como Vercel/Netlify (frontend) y un VPS/Render/Fly.io para el backend.
+- Configura correctamente variables de entorno en el servidor.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/be924646-d72c-4019-b253-ba4aa9a341a8) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+¿Dudas? Contacta a los desarrolladores o abre un issue.
