@@ -63,7 +63,7 @@ const About = () => {
               <div className="bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl p-8 shadow-card">
                 <div className="aspect-square bg-gradient-to-br from-primary to-primary/80 rounded-xl flex items-center justify-center overflow-hidden shadow-glow">
                   <img
-                    src="assets/trabajoImagen.jpg"
+                    src="src/assets/trabajoImagen.jpg"
                     alt="Trabajo imagen"
                     className="object-cover w-full h-full rounded-xl transition-transform duration-500 hover:scale-105 hover:brightness-110"
                   />
