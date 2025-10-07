@@ -23,9 +23,9 @@ export default async function handler(req: any, res: any) {
 
   // Opciones del correo con HTML
   const mailOptions = {
-    from: `"Formulario Web" <${process.env.GMAIL_USER}>`,
+    from: `"Datos del cliente de ElectroServicios" <${process.env.GMAIL_USER}>`,
     to: process.env.GMAIL_USER,
-    subject: `📩 Nuevo mensaje de ${name}`,
+    subject: `📩 Solicitud de ${name}`,
     html: `
       <div style="
         border: 2px solid #4F46E5;
@@ -34,7 +34,7 @@ export default async function handler(req: any, res: any) {
         font-family: Arial, sans-serif;
         background-color: #F3F4F6;
       ">
-        <h2 style="color: #4F46E5; margin-bottom: 15px;">Nuevo mensaje del formulario web</h2>
+        <h2 style="color: #4F46E5; margin-bottom: 15px;">Solicitud de ${name}</h2>
         <p><strong>Nombre:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Teléfono:</strong> ${phone || "No proporcionado"}</p>
