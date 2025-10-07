@@ -48,8 +48,8 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Teléfono",
-      content: "+56 9 5714 3222",
-      link: "tel:+56957143222"
+      content: "+56 9 35646022",
+      link: "tel:+56935646022"
     },
     {
       icon: Mail,
