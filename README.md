@@ -1,4 +1,4 @@
-# Electroservicios Villa Prat
+# ElectroServicios Daniel Herrera
 
 Proyecto web para mostrar servicios eléctricos y permitir el contacto vía formulario y WhatsApp.
 
