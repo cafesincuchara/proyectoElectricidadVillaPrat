@@ -40,7 +40,7 @@ const Contact = () => {
   
   const handleWhatsApp = () => {
     const message = "Hola, me gustaría solicitar información sobre sus servicios eléctricos.";
-    const phone = "56912345678"; // Replace with actual phone number
+    const phone = "56957143222"; // Replace with actual phone number
     window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
   };
 
@@ -48,14 +48,14 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Teléfono",
-      content: "+56 9 1234 5678",
-      link: "tel:+56912345678"
+      content: "+56 9 5714 3222",
+      link: "tel:+56957143222"
     },
     {
       icon: Mail,
       title: "Email",
-      content: "contacto@electroservicios.cl",
-      link: "mailto:contacto@electroservicios.cl"
+      content: "delectric.d@gmail.com",
+      link: "mailto:delectric.d@gmail.com"
     },
     {
       icon: MapPin,
