@@ -1,4 +1,4 @@
-import { Zap, Phone, Mail, MapPin, Facebook, Instagram } from "lucide-react";
+import { Zap, Phone, Mail, MapPin } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -22,24 +22,7 @@ const Footer = () => {
               <p className="text-muted-foreground mb-4 max-w-sm">
                 Servicios eléctricos profesionales en Villa Prat y Curicó. Tu seguridad eléctrica en buenas manos.
               </p>
-              <div className="flex gap-3">
-                <a 
-                  href="https://facebook.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 bg-primary/10 hover:bg-primary/20 rounded-lg flex items-center justify-center transition-colors group"
-                >
-                  <Facebook className="w-5 h-5 text-primary group-hover:scale-110 transition-transform" />
-                </a>
-                <a 
-                  href="https://instagram.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 bg-primary/10 hover:bg-primary/20 rounded-lg flex items-center justify-center transition-colors group"
-                >
-                  <Instagram className="w-5 h-5 text-primary group-hover:scale-110 transition-transform" />
-                </a>
-              </div>
+              
             </div>
 
             {/* Quick Links */}
@@ -66,13 +49,13 @@ const Footer = () => {
                 <li className="flex items-start gap-2 text-sm">
                   <Phone className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
                   <a href="tel:+56912345678" className="text-muted-foreground hover:text-primary transition-colors">
-                    +56 9 1234 5678
+                    +56 9 3564 6022
                   </a>
                 </li>
                 <li className="flex items-start gap-2 text-sm">
                   <Mail className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
                   <a href="mailto:contacto@electroservicios.cl" className="text-muted-foreground hover:text-primary transition-colors">
-                    contacto@electroservicios.cl
+                    delectric.d@gmail.com
                   </a>
                 </li>
                 <li className="flex items-start gap-2 text-sm">
