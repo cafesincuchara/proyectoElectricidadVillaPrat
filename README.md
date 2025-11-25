@@ -8,6 +8,7 @@ Proyecto web para mostrar servicios eléctricos y permitir el contacto vía form
 - **Backend:** Node.js + Express (API para contacto)
 - **Email:** Nodemailer (envío de mensajes del formulario a Gmail)
 
+<<<<<<< HEAD
 ## Estructura del proyecto
 - `src/` — Código fuente del frontend (componentes, páginas, hooks)
 - `server.js` — Servidor Express para manejar el formulario de contacto
@@ -63,4 +64,7 @@ Proyecto web para mostrar servicios eléctricos y permitir el contacto vía form
 
 ---
 
+=======
+
+>>>>>>> 6cf53ac19b7b3c8e027f458fa724449c00edb854
 ¿Dudas? Contacta a los desarrolladores o abre un issue.
