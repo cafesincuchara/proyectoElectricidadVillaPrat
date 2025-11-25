@@ -40,3 +40,45 @@ coverage/
 # Windows thumbnail cache
 Thumbs.db
 ehthumbs.db
+
+# OS generated files
+*.orig
+*.bak
+*.tmp
+*.temp
+~$*
+
+# MacOS
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+
+# Linux
+*~
+.directory
+
+# Build output
+build/
+out/
+
+# Dependency directories
+.pnp
+.pnp.js
+
+# Misc
+*.log.*
+*.tgz
+*.zip
+*.tar.gz
+*.tar
+
+# SASS/SCSS cache
+.sass-cache/
+.cache/
+
+# Next.js
+.next/
